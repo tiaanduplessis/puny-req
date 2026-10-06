@@ -25,7 +25,7 @@ const req = function req (args) {
     const options = Object.assign(
       {
         hostname: parsedUrl.hostname,
-        port: Number(parsedUrl.port || parsedUrl.protocol === 'http:' ? '80' : '443'),
+        port: Number(parsedUrl.port || (parsedUrl.protocol === 'http:' ? '80' : '443')),
         method: args.form || args.json ? 'POST' : 'GET',
         headers: {},
         path: parsedUrl.path,
