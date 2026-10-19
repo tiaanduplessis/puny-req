@@ -33,7 +33,7 @@
   "dependencies": {
     "@tiaanduplessis/json": "^2.0.1",
     "follow-redirects": "^1.2.3",
-    "qs": "^6.4.0"
+    "qs": "^6.9.4"
   },
   "devDependencies": {
     "husky": "^1.0.0",
